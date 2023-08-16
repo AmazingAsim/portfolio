@@ -5,11 +5,13 @@ import Work from './components/Work'
 import Certificate from './components/Certificate'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar';
+import BubbleEffect from './components/Bubble';
 
 function App() {
   let url = 'https://portfolioapi-9riq.onrender.com'
   return (
     <div className="App">
+        <BubbleEffect/>  
         <BrowserRouter>
             <Navbar></Navbar>
             <Routes>

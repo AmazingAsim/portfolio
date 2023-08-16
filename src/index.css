@@ -1,1 +1,115 @@
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dosis:wght@200&display=swap');
+
+*{
+  overflow: hidden;
+}
+
+body{
+  background: url("https://static.vecteezy.com/system/resources/previews/003/273/882/original/wave-blue-background-wallpaper-free-vector.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.homebutton1{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 220px;
+  width:  220px;
+  border: none;
+  border-radius: 50%;
+  transition: 2s;
+  animation: rotate 4s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  font-family: 'Cherry Bomb One', cursive;
+}
+.homebutton2{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 220px;
+  width:  220px;
+  border: none;
+  border-radius: 50%;
+  transition: 2s;
+  animation: rotate 6s infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  font-family: 'Cherry Bomb One', cursive;
+}
+.homebutton3{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 220px;
+  width:  220px;
+  border: none;
+  border-radius: 50%;
+  transition: 2s;
+  animation: rotate 5s infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  font-family: 'Cherry Bomb One', cursive;
+}
+
+.hovereffect:hover{
+   transform: rotate(10deg);
+   transition: 2s;
+   border-radius: 35% 40%;
+   box-shadow: 0px 0px 10px gray, 0px 0px 20px blue;
+   background-color: rgba(255,225,255,0.6);
+}
+
+.home{
+  height: 88vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  background-position: bottom;
+  flex-wrap: wrap;
+  background-repeat: repeat-y;
+}
+
+@keyframes rotate {
+  0%{
+    right: 0px;
+    bottom: 0px;
+    border-radius: 40% 50%;
+  }
+  25%{
+    right: 0px;
+    right:5px;
+    border-radius: 50% 40%;
+  }
+  50%{
+    right:5px;
+    bottom: 5px;
+    border-radius: 50% 50%;
+  }
+  75%{
+    right:0px;
+    bottom: 5px;
+    border-radius: 40% 40%;
+  }
+  100%{
+    right: 0px;
+    bottom: 0px;
+    border-radius: 40% 50%;
+  }
+}
+
+.pdf{
+  width: 100%;
+
+}
+
+.cardimage{
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body{
+  height: 100px;
+}
