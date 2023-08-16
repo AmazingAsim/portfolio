@@ -113,3 +113,9 @@ body{
 .card-body{
   height: 100px;
 }
+
+.resume{
+  display: block;
+  width: 100%;
+  height: 80vh;
+}
