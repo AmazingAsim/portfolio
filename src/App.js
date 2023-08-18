@@ -11,7 +11,6 @@ function App() {
   let url = 'https://portfolioapi-9riq.onrender.com'
   return (
     <div className="App">
-        <BubbleEffect/>  
         <BrowserRouter>
             <Navbar></Navbar>
             <Routes>

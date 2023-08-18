@@ -74,7 +74,7 @@ const BubbleEffect = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ position: 'absolute', top: 50, left: 0 }} />;
+  return <canvas  ref={canvasRef} style={{ position: 'absolute', top: 50, left: 0,width:"100vw" }} />;
 };
 
 export default BubbleEffect;

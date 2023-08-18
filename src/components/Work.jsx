@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import axios from 'axios'
+import BubbleEffect from './Bubble'
 export default function Work() {
   let [projects, setProjects] = useState([]);
   useEffect(() => {
@@ -13,9 +14,8 @@ export default function Work() {
   }
   return (
     <div className='work' style={{ minHeight: "88vh" }}>
-
+      <BubbleEffect></BubbleEffect>
       <h1>projects</h1>
-
       <div className="container">
         <div className="row">
           {
