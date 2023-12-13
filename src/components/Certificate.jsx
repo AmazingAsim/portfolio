@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import BubbleEffect from './Bubble'
 export default function Certificate() {
+  let root = `https://certificates.amazingasim.repl.co`
   return (
     <div>
        <BubbleEffect></BubbleEffect>
@@ -23,7 +24,7 @@ export default function Certificate() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <img className='img-fluid' src={`https://portfolioapi-9riq.onrender.com/api/getdegree`} alt="" />
+              <img className='img-fluid' src={`${root}/api/getdegree`} alt="" />
             </div>
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function Certificate() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <img className='img-fluid' src={`https://portfolioapi-9riq.onrender.com/api/getphase1`} alt="" />
+              <img className='img-fluid' src={`${root}/api/p1`} alt="" />
             </div>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function Certificate() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <img className='img-fluid' src={`https://portfolioapi-9riq.onrender.com/api/getphase2`} alt="" />
+              <img className='img-fluid' src={`${root}/api/p2`} alt="" />
             </div>
           </div>
         </div>
@@ -66,7 +67,7 @@ export default function Certificate() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <img className='img-fluid' src={`https://portfolioapi-9riq.onrender.com/api/getphase3`} alt="" />
+              <img className='img-fluid' src={`${root}/api/p3`} alt="" />
             </div>
           </div>
         </div>
@@ -81,7 +82,7 @@ export default function Certificate() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <img className='img-fluid' src={`https://portfolioapi-9riq.onrender.com/api/getphase4`} alt="" />
+              <img className='img-fluid' src={`${root}/api/p4`} alt="" />
             </div>
           </div>
         </div>
