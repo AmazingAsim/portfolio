@@ -1,14 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bungee+Tint&family=Gravitas+One&family=Lobster&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: cursive;
+     font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
 }
+
+
+  html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #000;
+      color:white;
+      cursor: none; /* hide default cursor */
+    }
+    #bg-bubbles {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+      display: block;
+    }
+
+    .demo {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      color: #9be8ff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      text-align: center;
+    }
+
 
 .fancytext{
     color: #e91e63;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+       font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
 }
+
+.learnbutton{
+    background-color: #e91e63;
+    border: none;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border:2px solid black;
+}
+.learnbutton:hover{
+    background-color:white;
+    color:#e91e63;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px #e91e63;
+    border:2px solid #e91e63;
+
+}
+
 header{
     height: 70vh;
     background-image: url('./images/asim.jpg');
@@ -19,6 +90,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .col-md-6{
     padding: 20px;
@@ -48,7 +120,7 @@ header{
     text-align: left;
     border-radius: 10px;
     background-color:rgba(0, 0, 0, 0.2);
-    color: darkslategray;
+    color: white;
     cursor: pointer;
     flex-shrink: 0;
 }
@@ -63,26 +135,6 @@ h2.display-4{
 h3.display-6{
     text-shadow: 2px 2px 10px #1eace9;
 }
-
-@media only screen and (max-width: 800px) {
-    .flexboxexp{
-        flex-direction: column;
-    }
-    #introbox{
- position:static;
- text-align: center;
-}
-
-#profile{
-    height: 40vh !important
-}
-
-header{
-    margin-top: 40px;
-}
-}
-
-
 
 
 /* // ai animation  */
@@ -105,6 +157,8 @@ header{
         margin-bottom: 30px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
+
 /* Floating animations */
     @keyframes float {
         0%, 100% { transform: translateY(0); }
@@ -182,3 +236,15 @@ header{
             
         }
     }
+
+@media screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .flexboxexp p{
+        font-size: 15px;
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +16,9 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </head>
-
 <body>
+    <canvas id="bg-bubbles"></canvas>
+    
     <header>
         <svg class="position-absolute floating-animation-1" style="width: 30px; height: 30px; top: 15%; left: 10%;"
             viewBox="0 0 100 100">
@@ -30,12 +30,12 @@
                 <div class="col-md-6">
                     <div id="introbox">
                         <h1 class="display-1 fw-bolder">Meet <br> <span class="fancytext">Asim sheikh!</span></h1>
-                        <h3>Full-Stack Web Developer | MERN/MEAN Stack
-                            Specialist | PHP | SEO | Freelancer</h3>
+                        <h3>Full-Stack Web Developer | MERN/MEAN Stack</h3>
+                            <a class="learnbutton" href="Asim_resume_Mern_stack.pdf" target="_blank" >Download CV.</a>
                     </div>
-                </div>
+                </div>  
 
-                <div class="col-md-6 text-center position-relative">
+                <div class="col-md-6 text-center position-relative" id="trouble">
                     <!-- SVG Decorations -->
                     <svg class="position-absolute floating-animation-1"
                         style="width: 30px; height: 30px; top: 15%; left: 10%;" viewBox="0 0 100 100">
@@ -76,7 +76,7 @@
     </header>
     <section class="container">
         <h2 class="display-4 fw-bolder">About Me</h2>
-        <p>Full-stack developer with 3+ years of experience delivering
+        <p>Full-stack developer with 4+ years of experience delivering
             scalable and responsive web applications using MERN and
             MEAN stacks. Proficient in JavaScript, React, Node.js, Express,
             MongoDB, and MySQL, along with strong backend
