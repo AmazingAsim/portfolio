@@ -237,12 +237,16 @@ h3.display-6{
         }
     }
 
+    .project-item{
+        color:black;
+    }
+
 @media screen and (max-width: 600px) {
     *{
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     header{
         height: 100vh;
@@ -259,5 +263,14 @@ h3.display-6{
  margin-top: 50px;
  text-align: center;
 }
+
+.learnbutton{
+    position: static;
+    margin-top:60px;
+}
+a,h3{
+    overflow: hidden !important;
+}
+
 
 }
